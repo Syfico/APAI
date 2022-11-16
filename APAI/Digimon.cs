@@ -6,7 +6,7 @@ public class Digimon
     public string Name { get; set; }
 
     [JsonPropertyName(":level")]
-    public int level { get; set; }
+    public int Level { get; set; }
 
     [JsonPropertyName("is_default")]
     public bool isDefault { get; set; }

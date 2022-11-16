@@ -8,9 +8,9 @@ RestResponse response = pokeClient.GetAsync(request).Result;
 
 if (response.StatusCode == HttpStatusCode.OK)
 {
-    Pokemon p = JsonSerializer.Deserialize<Pokemon>(response.Content);
+    Digimon d = JsonSerializer.Deserialize<Digimon>(response.Content);
     Console.WriteLine(p.Name);
-    Console.WriteLine(p.Weight);
+    Console.WriteLine(p.Level);
 }
 else
 {
