@@ -2,8 +2,8 @@
 using System.Text.Json;
 using System.Net;
 
-RestClient pokeClient = new("https://pokeapi.co/api/v2/");
-RestRequest request = new("pokemon/amoonguss");
+RestClient pokeClient = new("https://digimon-api.vercel.app/api/digimon");
+RestRequest request = new("/api/digimon/name/agumon");
 RestResponse response = pokeClient.GetAsync(request).Result;
 
 if (response.StatusCode == HttpStatusCode.OK)
